@@ -1,0 +1,167 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    height: 60px;
+    z-index: 1;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul > li {
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+nav > ul > li > a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#welcome-section {
+    margin-top:60px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;   
+    padding-top: 40vh;
+    color: white;
+    font-weight: 600;
+}
+
+#video-container > video {
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+    margin-top: 0;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#projects {
+    height: 100vh;
+    padding-top: 7vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+#projects-container {
+    height: 700px;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.projects-img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.project-tile {
+    border: 2px solid #79a5af;;
+    width: 200px
+}
+
+.project-tile > a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-tile > a >figcaption {
+    text-align: center;
+    border-top: 2px solid #79a5af;
+    padding: 5px 0;
+}
+
+#projects > button {
+    display:block;
+    text-align: center;
+    width: 260px;
+    height: 45px;
+    margin: auto;
+    background-color: #79a5af;
+    border-radius: 7px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+#contact-container {
+    display: grid;
+    grid-template: auto / repeat(5, auto);
+    height: 500px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.contact-img {
+    width: 100%;
+    border: 1px solid #79a5af;
+    border-radius: 50%;
+}
+
+.contact-figure > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-figure > a > figcaption{
+    text-align: center;
+    font-size: 10px;
+}
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: grey;
+}
+
+@media (max-width: 800px) {
+    #projects-container {
+        grid-template: repeat(4, auto) / repeat(2, auto);
+        height: auto;
+    }
+    
+    #projects {
+        height: 1400px;
+    }
+    
+    #contact-container {
+        grid-template: repeat(2, auto) / repeat(3, auto);
+    }
+    
+    .contact-img {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
