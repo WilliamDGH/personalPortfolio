@@ -7,16 +7,15 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
     margin: 0;
     height: 60px;
-    z-index: 1;
 }
 
 nav > ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 nav > ul > li {
@@ -25,7 +24,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    color: white;
+    color: #ffb844;
     font-weight: 500;
     text-decoration: none;
 }
@@ -41,29 +40,31 @@ nav > ul > li > a {
 }
 
 h1 {
-    font-size: 40px;   
+    font-size: 60px;
     padding-top: 40vh;
-    color: white;
+    color: #fcaf32;
     font-weight: 600;
 }
 
 #video-container > video {
-    position:absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
-    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -2;
     margin-top: 0;
 }
 
 .color-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: white;
-    opacity: 0.3;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 #projects {
@@ -151,15 +152,15 @@ footer {
         grid-template: repeat(4, auto) / repeat(2, auto);
         height: auto;
     }
-    
+
     #projects {
         height: 1400px;
     }
-    
+
     #contact-container {
         grid-template: repeat(2, auto) / repeat(3, auto);
     }
-    
+
     .contact-img {
         width: 80%;
         margin-left: 10%;
