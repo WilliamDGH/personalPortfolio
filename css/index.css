@@ -46,6 +46,11 @@ h1 {
     font-weight: 600;
 }
 
+h1 > a {
+  text-decoration: none;
+  color: #fcaf32;
+}
+
 #video-container > video {
     position: fixed;
     left: 0;
