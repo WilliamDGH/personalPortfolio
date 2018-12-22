@@ -167,6 +167,7 @@ h1 span {
   animation: typing 3s;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 20px;
 
 }
 
@@ -212,4 +213,10 @@ footer {
 
 .opened {
   height: calc(100% - 60px);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    padding-top: 10vh;
+  }
 }
