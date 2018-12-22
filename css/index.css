@@ -1,5 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|VT323');
+
+
 body {
-    font-family: sans-serif;
+  font-family: "VT323" sans-serif;
+  /* animated background ,thanks for https://codepen.io/P1N2O/pen/pyBNzX */
+	background: linear-gradient(-45deg, #ffeea8, #e7ffa8, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.background-shape {
+  width: 90%;
+  max-width: 960px;
+  position: absolute;
+  top: 0px;
+  left: 5%;
+}
+
+@media screen and (min-width: 1067px) {
+  .background-shape {
+    width: 960px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 480px);
+  }
+}
+
+#first{
+  background-color: #0391bc;
+  height: 30%;
+  z-index: -100;
+  transform: skewY(4deg);
+  box-shadow: 0px 0px 62px 6px rgba(0,0,0,0.75);
+}
+
+#second{
+  background-color: black;
+  height: 70%;
+  z-index: -200;
+  transform: skewY(-4deg);
+
+}
+
+#third{
+  background-color: #0391bc;
+  height: 100%;
+  z-index: -500;
+  box-shadow: 0px 0px 62px 6px rgba(0,0,0,0.75);
 }
 
 nav {
@@ -13,161 +99,117 @@ nav {
 }
 
 nav > ul {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    max-width: 960px;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav > ul > li {
-    padding-left: 60px;
-    padding-right: 20px;
-}
-
-nav > ul > li > a {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
     color: #ffb844;
     font-weight: bold;
-    text-decoration: none;
+    cursor: pointer;
 }
 
-#welcome-section {
-    margin-top:60px;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+nav > ul > li:hover {
+  border: 1px solid #fcaf32;
+  border-radius: 0.5em;
+  color: #f7e9b2;
+}
+
+main {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 60px;
-    padding-top: 40vh;
+    font-family: "Francois One";
+    font-size: 40px;
+    padding-top: 30vh;
     color: #fcaf32;
     font-weight: 600;
+    text-align: center;
 }
 
-h1 > a {
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 11ch;
+  }
+}
+
+h1 span {
+  font-size: 100px;
   text-decoration: none;
   color: #fcaf32;
 }
 
-#video-container > video {
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-height: 100%;
-    min-width: 100%;
-    z-index: -2;
-    margin-top: 0;
+.wraper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-around;
 }
 
-.color-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    opacity: 0.4;
-    z-index: -1;
+.main-content {
+  text-align: center;
+  color: #fcaf32;
+  margin: 0;
+  padding: 10px;
+  animation: typing 3s;
+  overflow: hidden;
+  white-space: nowrap;
+
 }
 
-#projects {
-    height: 100vh;
-    padding-top: 7vh;
+.main-content:hover {
+  border: 1px solid #fcaf32;
+  border-radius: 0.5em;
 }
 
-h2 {
-    text-align: center;
-}
-
-#projects-container {
-    height: 700px;
-    display: grid;
-    grid-template: repeat(3, auto) / repeat(3, auto);
-    justify-content: space-around;
-    align-content: space-between;
-}
-
-.projects-img {
-    width: 80%;
-    margin-left: 10%;
-}
-
-
-.project-tile {
-    border: 2px solid #79a5af;;
-    width: 200px
-}
-
-.project-tile > a {
-    color: black;
-    text-decoration: none;
-}
-
-.project-tile > a >figcaption {
-    text-align: center;
-    border-top: 2px solid #79a5af;
-    padding: 5px 0;
-}
-
-#projects > button {
-    display:block;
-    text-align: center;
-    width: 260px;
-    height: 45px;
-    margin: auto;
-    background-color: #79a5af;
-    border-radius: 7px;
-    margin-top: 50px;
-    font-size: 16px;
-}
-
-#contact-container {
-    display: grid;
-    grid-template: auto / repeat(5, auto);
-    height: 500px;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.contact-img {
-    width: 100%;
-    border: 1px solid #79a5af;
-    border-radius: 50%;
-}
-
-.contact-figure > a {
-    text-decoration: none;
-    color: black;
-}
-
-.contact-figure > a > figcaption{
-    text-align: center;
-    font-size: 10px;
-}
 footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
     text-align: center;
     font-size: 10px;
     color: grey;
 }
 
-@media (max-width: 800px) {
-    #projects-container {
-        grid-template: repeat(4, auto) / repeat(2, auto);
-        height: auto;
-    }
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 60px;
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-y: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-    #projects {
-        height: 1400px;
-    }
+.close {
+  color: #666;
+  position: absolute;
+  right: 10%;
+  font-size: 40px;
+  font-weight: 400;
+  top: 0;
+}
 
-    #contact-container {
-        grid-template: repeat(2, auto) / repeat(3, auto);
-    }
+.close:hover {
+  color: white;
+}
 
-    .contact-img {
-        width: 80%;
-        margin-left: 10%;
-    }
+.opened {
+  height: calc(100% - 60px);
 }

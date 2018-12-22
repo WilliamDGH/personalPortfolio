@@ -3,27 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Guanhua Ding</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     </head>
 <body>
+  <div id="background">
+    <div class="background-shape" id = "first"></div>
+    <div class="background-shape" id = "second"></div>
+    <div class="background-shape" id = "third"></div>
+    <div class="background-shape" id = "forth"></div>
+    <div class="background-shape" id = "fifth"></div>
+  </div>
+
     <nav id="navbar">
         <ul>
-            <li><a href="#welcome-section">About me</a></li>
-            <li><a href="#projects">My work</a></li>
-            <li><a href="#contact">Work with me</a></li>
-            <li><a href="#contact">Play with me</a></li>
+            <li id = "about-link"><i class="fas fa-id-card"> Me</i></li>
+            <li id = "work-link"><i class="fas fa-file-word"></i> Work</li>
+            <li id = "connect-link"><i class="far fa-handshake"></i> Connect</li>
+            <li id = "play-link"><i class="fab fa-playstation"></i> Play</li>
         </ul>
     </nav>
 
     <main id="welcome-section">
-        <h1>I am <a href="https://www.linkedin.com/in/guanhua-ding-a407aa121/">Guanhua Ding</a></h1>
-        <div id="video-container">
-            <div class="color-overlay"></div>
-        <video autoplay loop muted>
-            <source src="video/beach_video.mp4" type="video/mp4">
-        </video>
+        <h1>I am <span>Guanhua<br>Ding</span></h1>
+        <div class="wraper">
+          <p class= "main-content" ><i class="fab fa-js-square"></i> Developer</p>
+          <p class= "main-content" ><i class="fas fa-gamepad"></i> Gamer</p>
+          <p class= "main-content" ><i class="fas fa-baby"></i> Father</p>
         </div>
+
     </main>
+
+    <div class="overlay" id="about">
+      <p class="close">&times;</p>
+
+      <div class="overlay-content">
+
+      </div>
+    </div>
+
+    <div class="overlay" id="work">
+      <p class="close">&times;</p>
+
+      <div class="overlay-content">
+
+      </div>
+    </div>
+
+    <div class="overlay" id="connect">
+      <p class="close">&times;</p>
+
+      <div class="overlay-content">
+
+      </div>
+    </div>
+
+    <div class="overlay" id="play">
+      <p class="close">&times;</p>
+
+      <div class="overlay-content">
+
+      </div>
+    </div>
 
     <!-- <section id="projects">
         <h2>Here are my past works</h2>
@@ -107,10 +151,10 @@
         </div>
     </section> -->
 
-    <footer>
+    <!-- <footer>
         <hr>
         <p>Protfolio of Guanhua Ding. Created by Guanhua Ding. 	&#128512;</p>
-    </footer>
+    </footer> -->
     </body>
 
 </html>
