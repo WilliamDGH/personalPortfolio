@@ -146,10 +146,14 @@ h1 {
   }
 }
 
-h1 span {
+h1 a {
   font-size: 100px;
   text-decoration: none;
   color: #fcaf32;
+}
+
+h1 a:hover {
+  color: #f7e9b2;
 }
 
 .wraper {
