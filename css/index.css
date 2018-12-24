@@ -219,6 +219,22 @@ footer {
   height: calc(100% - 60px);
 }
 
+
+
+#projects-container{
+  max-width: 90vw;
+  display: flex;
+}
+
+#projects figure {
+  width: 200px;
+
+}
+
+#projects img {
+  width: 150px;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     padding-top: 10vh;
