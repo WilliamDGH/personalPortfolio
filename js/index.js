@@ -6,8 +6,9 @@ $(document).ready(function () {
   $("#about-link").on("click", function () {
     // open overlay
     if ($("#about").hasClass("opened")) {
-      $("#about").removeClass("opened");
+      $(".opened").removeClass("opened");
     } else {
+      $(".opened").removeClass("opened");
       $("#about").addClass("opened");
     }
   });
@@ -15,8 +16,9 @@ $(document).ready(function () {
   $("#work-link").on("click", function () {
     // open overlay
     if ($("#work").hasClass("opened")) {
-      $("#work").removeClass("opened");
+      $(".opened").removeClass("opened");
     } else {
+      $(".opened").removeClass("opened");
       $("#work").addClass("opened");
     }
   });
@@ -24,8 +26,9 @@ $(document).ready(function () {
   $("#connect-link").on("click", function () {
     // open overlay
     if ($("#connect").hasClass("opened")) {
-      $("#connect").removeClass("opened");
+      $(".opened").removeClass("opened");
     } else {
+      $(".opened").removeClass("opened");
       $("#connect").addClass("opened");
     }
   });
@@ -33,8 +36,9 @@ $(document).ready(function () {
   $("#play-link").on("click", function () {
     // open overlay
     if ($("#play").hasClass("opened")) {
-      $("#play").removeClass("opened");
+      $(".opened").removeClass("opened");
     } else {
+      $(".opened").removeClass("opened");
       $("#play").addClass("opened");
     }
   });
