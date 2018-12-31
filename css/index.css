@@ -4,7 +4,7 @@
 body {
   font-family: "VT323" sans-serif;
   /* animated background ,thanks for https://codepen.io/P1N2O/pen/pyBNzX */
-	background: linear-gradient(-45deg, #ffeea8, #e7ffa8, #23A6D5, #23D5AA);
+	background: linear-gradient(-45deg, #ffeea7, #e7ffa9, #23A6D6, #23D5AA);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
