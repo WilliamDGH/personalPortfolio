@@ -2,14 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
+  margin: 20vh auto;
   justify-content: space-around;
 }
 
 .tech-logo {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 15vh;
+  height: 15vh;
+  max-height: 150px;
+  max-width: 150px;
   margin-bottom: 20px;
   border-radius: 1em;
 }
@@ -18,4 +20,23 @@ hr.divider-light {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: rgba(0,0,0, 0.5);
+}
+
+
+@media (min-width: 992px) {
+  #skills {
+    height: 100vh;
+    padding-top: 30%;
+  }
+
+  #trivia {
+    height: 100vh;
+    padding-top: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #projects {
+    height: 100vh;
+  }
 }
