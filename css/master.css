@@ -13,3 +13,9 @@
   margin-bottom: 20px;
   border-radius: 1em;
 }
+
+hr.divider-light {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: rgba(0,0,0, 0.5);
+}
