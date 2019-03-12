@@ -22,6 +22,24 @@ hr.divider-light {
   border-color: rgba(0,0,0, 0.5);
 }
 
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-link {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.3em;
+  border-radius: 0.5em;
+  display: inline-block;
+  width: 30%;
+  background-color: rgba(255, 197, 163, 0.5);
+}
+
+.project-link:hover {
+  background-color: rgb(255, 227, 211, 0.5);
+}
 
 @media (min-width: 992px) {
   #skills {
@@ -35,16 +53,9 @@ hr.divider-light {
   }
 }
 
-.project-links {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.project-link {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 0.3em;
-  border-radius: 0.5em;
-  display: inline-block;
-  width: 30%;
+@media (max-width: 600px) {
+  .tech-logo {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
