@@ -55,4 +55,8 @@
     }
   });
 
+  console.log("Welcome to my portfolio page.");
+  console.log("Visit my GitHub here: https://github.com/WilliamDGH");
+  console.log("Visit my Linkedin here: https://www.linkedin.com/in/guanhuading/");
+
 })(jQuery); // End of use strict

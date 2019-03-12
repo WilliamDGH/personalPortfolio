@@ -34,3 +34,17 @@ hr.divider-light {
     padding-top: 20%;
   }
 }
+
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-link {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.3em;
+  border-radius: 0.5em;
+  display: inline-block;
+  width: 30%;
+}
