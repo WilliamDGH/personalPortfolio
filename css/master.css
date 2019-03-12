@@ -26,17 +26,11 @@ hr.divider-light {
 @media (min-width: 992px) {
   #skills {
     height: 100vh;
-    padding-top: 30%;
+    padding-top: 15%;
   }
 
   #trivia {
     height: 100vh;
-    padding-top: 30%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #projects {
-    height: 100vh;
+    padding-top: 20%;
   }
 }
